@@ -1,0 +1,19 @@
+﻿@model PowerBIEmbedded_AppOwnsData.Models.IndexConfig
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="buttonsWrapper">
+    Select an entity to embed.<br/><br/>
+
+    <a id="btnEmbedReport" href="~/Home/EmbedReport">Embed Report</a>
+    <br/>
+
+    <div class="infoBox">
+        <b>Nuget packages which used in this solution</b><br/>
+        Microsoft.PowerBI.API Version @Model.DotNETSDK<br />
+        Microsoft.PowerBI.JavaScript Version 2.6.6<br />
+    </div>
+</div>
